@@ -298,9 +298,11 @@ body {
     background-color: var(--sucsess-color);
   }
 }
-
+.social-buttons-mobile > .icon {
+  fill: #ffffff;
+}
 .social-buttons > .icon {
-  stroke: #ffffff;
+  fill: #ffffff;
 }
 
 .nav-flex {
@@ -334,7 +336,7 @@ body {
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
     ),
-    url(../images/hero-image-mob.jpg);
+    url(./images/people-office\ 1-mobile.jpg);
   background-color: var(--dark-color);
   background-position: center;
   background-repeat: no-repeat;
@@ -350,7 +352,7 @@ body {
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)
       ),
-      url(../images/hero-image-mob@2x.jpg);
+      url(../images/people-office\ 1-mobile-2x.jpg);
   }
 }
 
@@ -1138,7 +1140,7 @@ body {
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)
       ),
-      url(../images/hero-image-tablet.jpg);
+      url(../images/people-office\ 1-tablet.jpg);
     background-color: var(--dark-color);
   }
 
@@ -1150,7 +1152,7 @@ body {
           rgba(46, 47, 66, 0.7),
           rgba(46, 47, 66, 0.7)
         ),
-        url(../images/hero-image-tablet@2x.jpg);
+        url(../images/tablet-2x.jpg);
     }
   }
 
@@ -1316,7 +1318,7 @@ body {
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)
       ),
-      url(../images/hero-image-desk.jpg);
+      url(../images/people-office\ 1.jpg);
     background-color: var(--dark-color);
   }
 
@@ -1328,7 +1330,7 @@ body {
           rgba(46, 47, 66, 0.7),
           rgba(46, 47, 66, 0.7)
         ),
-        url(../images/hero-image-desk@2x.jpg);
+        url(../images/people-office\ 1-2x.jpg);
     }
   }
 
