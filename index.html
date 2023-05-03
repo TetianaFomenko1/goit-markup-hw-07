@@ -37,7 +37,13 @@
               <a class="nav link" href="">Contacts</a>
             </li>
           </ul>
+          <button type="button" class="mobile-button-open">
+            <svg class="icon" width="32" height="22">
+              <use href="./images/icons.svg.svg#icon-burger"></use>
+            </svg>
+          </button>
         </nav>
+
         <address class="address">
           <ul class="address-list list">
             <li class="address-item">
@@ -52,6 +58,73 @@
             </li>
           </ul>
         </address>
+      </div>
+      <!-- Mobile Menu -->
+      <div class="mobile-menu">
+        <div class="container mobile-menu-container">
+          <button type="button" class="mobile-button-close">
+            <svg class="icon" width="8" height="8">
+              <use
+                href="./images/icons.svg.svg#icon-close-black-18dp-2-1"
+              ></use>
+            </svg>
+          </button>
+          <div class="mobile-menu-wrap">
+            <ul class="mobile-nav list">
+              <li class="item">
+                <a href="./index.html" class="link current-page">Studio</a>
+              </li>
+              <li class="item">
+                <a href="./portfolio.html" class="link">Portfolio</a>
+              </li>
+              <li class="item"><a href="" class="link">Contacts</a></li>
+            </ul>
+            <div class="mobile-menu-bottom-wrap">
+              <ul class="mobile-contacts list">
+                <li class="item">
+                  <a href="tel:+110001111111" class="link tel"
+                    >+11 (000) 111-11-11</a
+                  >
+                </li>
+                <li class="item">
+                  <a href="mailto:info@devstudio.com" class="link email"
+                    >info@devstudio.com</a
+                  >
+                </li>
+              </ul>
+              <ul class="social-buttons-mobile-list list">
+                <li class="social-buttons-mobile-item">
+                  <a class="social-buttons-mobile link" href=""
+                    ><svg class="icon" width="24" height="24">
+                      <use href="./images/icons.svg.svg#icon-instagram-2"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="social-buttons-mobile-item">
+                  <a class="social-buttons-mobile link" href=""
+                    ><svg class="icon" width="24" height="24">
+                      <use href="./images/icons.svg.svg#icon-twitter-1"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="social-buttons-mobile-item">
+                  <a class="social-buttons-mobile link" href=""
+                    ><svg class="icon" width="24" height="24">
+                      <use href="./images/icons.svg.svg#icon-facebook-1"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="social-buttons-mobile-item">
+                  <a class="social-buttons-mobile link" href=""
+                    ><svg class="icon" width="24" height="24">
+                      <use href="./images/icons.svg.svg#icon-linkedin-1"></use>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
       </div>
     </header>
     <main>
@@ -164,7 +237,7 @@
           </div>
         </div>
       </section>
-      <section class="qualities-section">
+      <section class="qualities-section nopadding-btm">
         <div class="qualities-container container">
           <h2 class="visually-hidden">Our qualities</h2>
           <ul class="list-qualities list">
@@ -227,6 +300,7 @@
             <li class="activities-item">
               <img
                 class="picture-activities"
+                srcset="./images/img1-2x.jpg 2x"
                 src="./images/img1.jpg"
                 alt="computer screen"
                 width="360"
@@ -236,6 +310,7 @@
             <li class="activities-item">
               <img
                 class="picture-activities"
+                srcset="./images/img 2-2x.jpg 2x"
                 src="./images/img2.jpg"
                 alt="phone screen"
                 width="360"
@@ -245,6 +320,7 @@
             <li class="activities-item">
               <img
                 class="picture-activities"
+                srcset="./images/img 3-2x.jpg 2x"
                 src="./images/img3.jpg"
                 alt="picture on phone and computer"
                 width="360"
@@ -262,134 +338,163 @@
             <li class="team-member">
               <img
                 class="team-member-photo"
+                srcset="./images/img-2x.jpg 2x"
                 src="./images/img.jpg"
                 alt="team member photo"
                 width="264"
                 height="260"
               />
-              <h3 class="team-member-name">Mark Guerrero</h3>
-              <p class="team-member-profession">Product Designer</p>
-              <ul class="social-network-list list">
-                <li class="social-network-item">
-                  <a class="social-network-link link" href="">
-                    <svg class="social-network-icon" width="16" height="16">
-                      <use href="./images/icons.svg.svg#icon-instagram-2"></use>
-                    </svg>
-                  </a>
-                </li>
-                <li class="social-network-item">
-                  <a class="social-network-link link" href="">
-                    <svg class="social-network-icon" width="16" height="16">
-                      <use href="./images/icons.svg.svg#icon-twitter-1"></use>
-                    </svg>
-                  </a>
-                </li>
-                <li class="social-network-item">
-                  <a class="social-network-link link" href="">
-                    <svg class="social-network-icon" width="16" height="16">
-                      <use href="./images/icons.svg.svg#icon-facebook-1"></use>
-                    </svg>
-                  </a>
-                </li>
-                <li class="social-network-item">
-                  <a class="social-network-link link" href="">
-                    <svg class="social-network-icon" width="16" height="16">
-                      <use href="./images/icons.svg.svg#icon-linkedin-1"></use>
-                    </svg>
-                  </a>
-                </li>
-              </ul>
+              <div class="card-caption">
+                <h3 class="team-member-name">Mark Guerrero</h3>
+                <p class="team-member-profession">Product Designer</p>
+                <ul class="social-network-list list">
+                  <li class="social-network-item">
+                    <a class="social-network-link link" href="">
+                      <svg class="social-network-icon" width="16" height="16">
+                        <use
+                          href="./images/icons.svg.svg#icon-instagram-2"
+                        ></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="social-network-item">
+                    <a class="social-network-link link" href="">
+                      <svg class="social-network-icon" width="16" height="16">
+                        <use href="./images/icons.svg.svg#icon-twitter-1"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="social-network-item">
+                    <a class="social-network-link link" href="">
+                      <svg class="social-network-icon" width="16" height="16">
+                        <use
+                          href="./images/icons.svg.svg#icon-facebook-1"
+                        ></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="social-network-item">
+                    <a class="social-network-link link" href="">
+                      <svg class="social-network-icon" width="16" height="16">
+                        <use
+                          href="./images/icons.svg.svg#icon-linkedin-1"
+                        ></use>
+                      </svg>
+                    </a>
+                  </li>
+                </ul>
+              </div>
             </li>
             <li class="team-member">
               <img
                 class="team-member-photo"
+                srcset="./images/imgn-2x.jpg 2x"
                 src="./images/imgn.jpg"
                 alt="team member photo2"
                 width="264"
                 height="260"
               />
-              <h3 class="team-member-name">Tom Ford</h3>
-              <p class="team-member-profession">Frontend Developer</p>
-              <ul class="social-network-list list">
-                <li class="social-network-item">
-                  <a class="social-network-link link" href="">
-                    <svg class="social-network-icon" width="16" height="16">
-                      <use href="./images/icons.svg.svg#icon-instagram-2"></use>
-                    </svg>
-                  </a>
-                </li>
-                <li class="social-network-item">
-                  <a class="social-network-link link" href="">
-                    <svg class="social-network-icon" width="16" height="16">
-                      <use href="./images/icons.svg.svg#icon-twitter-1"></use>
-                    </svg>
-                  </a>
-                </li>
-                <li class="social-network-item">
-                  <a class="social-network-link link" href="">
-                    <svg class="social-network-icon" width="16" height="16">
-                      <use href="./images/icons.svg.svg#icon-facebook-1"></use>
-                    </svg>
-                  </a>
-                </li>
-                <li class="social-network-item">
-                  <a class="social-network-link link" href="">
-                    <svg class="social-network-icon" width="16" height="16">
-                      <use href="./images/icons.svg.svg#icon-linkedin-1"></use>
-                    </svg>
-                  </a>
-                </li>
-              </ul>
+              <div class="card-caption">
+                <h3 class="team-member-name">Tom Ford</h3>
+                <p class="team-member-profession">Frontend Developer</p>
+                <ul class="social-network-list list">
+                  <li class="social-network-item">
+                    <a class="social-network-link link" href="">
+                      <svg class="social-network-icon" width="16" height="16">
+                        <use
+                          href="./images/icons.svg.svg#icon-instagram-2"
+                        ></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="social-network-item">
+                    <a class="social-network-link link" href="">
+                      <svg class="social-network-icon" width="16" height="16">
+                        <use href="./images/icons.svg.svg#icon-twitter-1"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="social-network-item">
+                    <a class="social-network-link link" href="">
+                      <svg class="social-network-icon" width="16" height="16">
+                        <use
+                          href="./images/icons.svg.svg#icon-facebook-1"
+                        ></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="social-network-item">
+                    <a class="social-network-link link" href="">
+                      <svg class="social-network-icon" width="16" height="16">
+                        <use
+                          href="./images/icons.svg.svg#icon-linkedin-1"
+                        ></use>
+                      </svg>
+                    </a>
+                  </li>
+                </ul>
+              </div>
             </li>
             <li class="team-member">
               <img
                 class="team-member-photo"
+                srcset="./images/imgk-2x.jpg 2x"
                 src="./images/imgk.jpg"
                 alt="team member photo3"
                 width="264"
                 height="260"
               />
-              <h3 class="team-member-name">Camila Garcia</h3>
-              <p class="team-member-profession">Marketing</p>
-              <ul class="social-network-list list">
-                <li class="social-network-item">
-                  <a class="social-network-link link" href="">
-                    <svg class="social-network-icon" width="16" height="16">
-                      <use href="./images/icons.svg.svg#icon-instagram-2"></use>
-                    </svg>
-                  </a>
-                </li>
-                <li class="social-network-item">
-                  <a class="social-network-link link" href="">
-                    <svg class="social-network-icon" width="16" height="16">
-                      <use href="./images/icons.svg.svg#icon-twitter-1"></use>
-                    </svg>
-                  </a>
-                </li>
-                <li class="social-network-item">
-                  <a class="social-network-link link" href="">
-                    <svg class="social-network-icon" width="16" height="16">
-                      <use href="./images/icons.svg.svg#icon-facebook-1"></use>
-                    </svg>
-                  </a>
-                </li>
-                <li class="social-network-item">
-                  <a class="social-network-link link" href="">
-                    <svg class="social-network-icon" width="16" height="16">
-                      <use href="./images/icons.svg.svg#icon-linkedin-1"></use>
-                    </svg>
-                  </a>
-                </li>
-              </ul>
+              <div class="card-caption">
+                <h3 class="team-member-name">Camila Garcia</h3>
+                <p class="team-member-profession">Marketing</p>
+                <ul class="social-network-list list">
+                  <li class="social-network-item">
+                    <a class="social-network-link link" href="">
+                      <svg class="social-network-icon" width="16" height="16">
+                        <use
+                          href="./images/icons.svg.svg#icon-instagram-2"
+                        ></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="social-network-item">
+                    <a class="social-network-link link" href="">
+                      <svg class="social-network-icon" width="16" height="16">
+                        <use href="./images/icons.svg.svg#icon-twitter-1"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="social-network-item">
+                    <a class="social-network-link link" href="">
+                      <svg class="social-network-icon" width="16" height="16">
+                        <use
+                          href="./images/icons.svg.svg#icon-facebook-1"
+                        ></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="social-network-item">
+                    <a class="social-network-link link" href="">
+                      <svg class="social-network-icon" width="16" height="16">
+                        <use
+                          href="./images/icons.svg.svg#icon-linkedin-1"
+                        ></use>
+                      </svg>
+                    </a>
+                  </li>
+                </ul>
+              </div>
             </li>
             <li class="team-member">
               <img
                 class="team-member-photo"
+                srcset="./images/imgj-2x.jpg 2x"
                 src="./images/imgj.jpg"
                 alt="team member photo4"
                 width="264"
                 height="260"
               />
+              <div class="card-caption">
               <h3 class="team-member-name">Daniel Wilson</h3>
               <p class="team-member-profession">UI Designer</p>
               <ul class="social-network-list list">
@@ -424,6 +529,7 @@
               </ul>
             </li>
           </ul>
+          </div>
         </div>
       </section>
       <section class="customers">
@@ -545,5 +651,6 @@
       </div>
     </footer>
     <script src="./modal.js"></script>
+    <script src="./mobile-menu.js"></script>
   </body>
 </html>
