@@ -127,7 +127,7 @@ body {
   padding-top: 24px;
   padding-bottom: 22px;
 
-  border-bottom: 2px solid var(--accent-color);
+  border-bottom: 1px solid var(--accent-color);
   /* outline: solid 1px orange; */
 }
 
@@ -615,7 +615,7 @@ body {
   background-color: var(--sucsess-color);
 }
 
-.footer-form {
+.footer-form .mob {
   display: flex;
   flex-direction: column;
   width: 100%;
@@ -644,7 +644,7 @@ body {
 
 .footer-form .input:is(:focus) {
   outline: none;
-  border-color: var(--sucsess-color);
+  border-color: var(--white-color);
 }
 
 .footer-form-field .input::placeholder {
@@ -652,6 +652,10 @@ body {
   line-height: 1.17;
   letter-spacing: 0.04em;
   color: var(--white-color);
+}
+
+.footer-form-input::placeholder {
+  color: #ffffff;
 }
 
 .footer-form-block > .button {
@@ -1081,11 +1085,6 @@ body {
     justify-content: flex-end;
   }
 
-  .contacts .item {
-    height: 14px;
-    line-height: 1;
-  }
-
   .site-nav .link {
     display: block;
     padding-top: 24px;
@@ -1123,7 +1122,7 @@ body {
 
     position: absolute;
     left: 0;
-    bottom: 0;
+    bottom: -1px;
 
     display: block;
     width: 100%;
@@ -1184,12 +1183,11 @@ body {
   }
 
   /* Narrow Container */
-  @media screen and (max-width: 1199px) {
+  @media screen and (max-width: 1157px) {
     .team-section .container,
     .customers-section .container,
     .footer-section .container {
-      padding-left: 108px;
-      padding-right: 108px;
+      min-width: 582px;
     }
   }
 
@@ -1207,8 +1205,8 @@ body {
   /* Tablet Footer Section -------------------------------------------------------*/
   .footer-section > .container {
     display: flex;
-    /* flex-direction: row; */
     flex-wrap: wrap;
+
     row-gap: 72px;
     align-items: flex-start;
   }
@@ -1225,6 +1223,7 @@ body {
 
   .footer-text.media {
     text-align: left;
+    font-weight: 500;
   }
 
   .footer-media-block {
@@ -1233,12 +1232,14 @@ body {
   }
 
   .footer-form {
-    display: block;
+    display: flex;
+    align-items: center;
     width: unset;
   }
 
   .footer-form-label {
     text-align: left;
+    font-weight: 500;
   }
 
   .footer-form .input {
@@ -1290,7 +1291,7 @@ body {
 
 /* ============================================================================ */
 /* Desktop adaptive container ===================================================*/
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1158px) {
   .container {
     width: calc(1128px + 2 * 15px);
   }
@@ -1403,8 +1404,9 @@ body {
 
   /* Desktop - Footer Section --------------------------------------------------------- */
   .footer-section {
-    padding-top: 100px;
-    padding-bottom: 100px;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: baseline;
   }
 
   .footer-section > .container {
